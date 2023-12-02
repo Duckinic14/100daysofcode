@@ -1,0 +1,17 @@
+names = names_string.split(", ")
+# The code above converts the input into an array seperating
+#each name in the input by a comma and space.
+# 🚨 Don't change the code above 👆
+number_of_names = 0
+for name in names:
+  number_of_names += 1
+  
+lucky_number = random.randint(0,int(number_of_names)-1)
+
+poor_chap = names[lucky_number] 
+print(f"{poor_chap} is going to buy the meal today!")
+
+
+
+# alternatively
+# num_items = len(names) #total numbers of items in list
