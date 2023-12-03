@@ -1,0 +1,178 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''') 
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+# Question 1
+
+alive = True
+print("You're at a crossroads. Do you go left or right?")
+direction_1 = input("Left or right? ").lower()
+if direction_1 == "left":
+  print('''
+                                         /\
+                                      /  |
+                                     /   |
+                        ____________/    (_______                    /|
+                 __-----                         -----___           / |
+               _-                                        ---______ /  /
+           ___/ o                                                 > -<
+          (___\                                    ________       \  \
+           `---\_     |   \               _____----        --------\  \
+                 ---__\    |________------                          \ |
+                       \   |                                         \'
+                        \  |
+                         \_|
+                         ''')
+  print("You continue walking and stumble along a river. You replenish your water supplies.")
+elif direction_1 == "right":
+  print('''
+               _________                      _
+   __------____/    ===  ========================
+   |               ________________/
+   |      ___--_/(_)             ^
+   |___---
+  ''')
+  print("You get ambushed by bandits. They blast a golfball sized hole through your chest with a musket, as the founding fathers intended. Game over. ")
+  alive = False
+  
+if alive == True:
+  print("Do you swim across the river or not? You spot a few floating blocks of wood....or are they?")
+  print('''
+                    _.---._     .---.
+            __...---' .---. `---'-.   `.
+  ~ -~ -.-''__.--' _.'( | )`.  `.  `._ :
+ -.~~ .'__-'_ .--'' ._`---'_.-.  `.   `-`.
+  ~ ~_~-~-~_ ~ -._ -._``---. -.    `-._   `.
+    ~- ~ ~ -_ -~ ~ -.._ _ _ _ ..-_ `.  `-._``--.._
+     ~~-~ ~-_ _~ ~-~ ~ -~ _~~_-~ -._  `-.  -. `-._``--.._.--''. ~ -~_
+         ~~ -~_-~ _~- _~~ _~-_~ ~-_~~ ~-.___    -._  `-.__   `. `. ~ -_~
+       jgs   ~~ _~- ~~- -_~  ~- ~ - _~~- _~~ ~---...__ _    ._ .` `. ~-_~
+                ~ ~- _~~- _-_~ ~-_ ~-~ ~_-~ _~- ~_~-_~  ~--.....--~ -~_ ~
+                     ~ ~ - ~  ~ ~~ - ~~-  ~~- ~-  ~ -~ ~ ~ -~~-  ~- ~-~
+''')
+  direction_2 = input("Y or N?").lower()
+  if direction_2 == "y":
+    print("The blocks of wood in the water chomp on you with their surprising well maintained set of teeth. Game over")
+    print('''
+                .-._   _ _ _ _ _ _ _ _
+     .-''-.__.-'00  '-' ' ' ' ' ' ' ' '-.
+     '.___ '    .   .--_'-' '-' '-' _'-' '._
+      V: V 'vv-'   '_   '.       .'  _..' '.'.
+        '=.____.=_.--'   :_.__.__:_   '.   : :
+                (((____.-'        '-.  /   : :
+      snd                         (((-'\ .' /
+                                _____..'  .'
+                               '-._____.-'
+    ''')
+    alive = False
+  elif direction_2 == "n":
+    print("You decide to wait around instead, observing the nearby zebra meet its demise. RIP")
+    print('''
+                           ,, ,,, ,,,, ,,,,,,,,
+              /\        /;; ;;;;;;;;;;;;;; ;;;/ ,;`.   ,,,,
+             ;  `-.    /// //////// /////  // ,','`;. ///;;;;,.
+            ,'   ,,`-.;;;;;; ;;;;;;; ;;;;// ,' ,'  `.`. ///;;//;,
+           ,'   ;;;//////// ////// ///////,'  ,'     ; : ;;// ;//,
+           `.  ;`;;;;;;;: ;;;;:;; ;:;:;;:;:  ,'     ,' : ;;;;;;;;/,
+            `. `; :!::::!;;;;;!::::!;!;;!;:  `.   ,'  ,'///!!;;;;;;
+              `._!!;!!!!;!!!!!;!!!!;!;!!;!!`.  `;'  ,'-.!!!//;;;////
+                 ;   .   .               ,        ,'    ::-!_///;;;;
+               .' ,%'  ,%'     `%.   `%.;;   `%.   ;;   ,::  `! ////
+              .', '    '    `%,  `:.   `::.   ::  :;    %::    `! ;;
+             ,';;        `%, `;;.         `::. `.;;;    `:%   %:///
+            ,';;'  ;      ;;  `::;   `%,    ;%:.  ::     ::     %`!/
+          ,' ;.'  .%.    ;;    `;;     ;;   ' `;   %     ::    %  :
+          :  `;;  %%%    `::   ;;     ;;;      `    `    ::     % `
+          ;    ' .%%'  `%  ;   '  ,., `;;         `%,   ::'   %::%
+         ;`. `.  %%%%   ;;   .___;;;;  '     `:    `;   ::     :::
+         : :  ;  %%%%   ;: ,:' _ `.`.        ;;;   ;;   `::    :::.
+         `.;  ;  `%%'  ;;' :: (0) ; :       ::'    ;      ::   `:::
+          ,' ;'  %%'  ;;'  ;;.___,',;       ;;    ;;       ;   ,:::
+         ,  ;'  :%:   ;;  ,'------''      ;;;'  .;;            :::'
+        ,' ;;   ;%;   ;;  '             ::'    ,;;;            :::
+        :  :'   :%:   `;             ;;;;'      ;;             ::%
+        :  ;;   :%'   ;;   ;...,,;;''         ;;'    ;     ;   :::
+        ;  `;   ::   ;;' ,:::'     .        .;;     ,'    ;;   `;;
+        ;  ;'   :: .;;' ,:::'   ,::%.      ;;;    ,'     ;;    ,;;
+        : ;;.  .:' ;;' ,:::' ;;:::' ;;    ;;'    ,'    ;;;    ;;;'
+         :`;;  ::  ;;  ;;;' '  .    ;;    '  _,-'     ;;;     `;'
+         : ;' .:'  ;; .::: ,%'`;   ;;;   _,-'       .;;;'     ;'
+        ,' ;; ;;  ;;' :::' ,, .;  ;;  _,' ;      ,;;;'     ,;;'
+       .'~~~~~~~~~._ ,;' ,',' ;;  ',-'   ,'    ,';;       ;;;'   ;;;
+     ,'             `-.,' .'  ;; ,'     ,' ;;;;;;'       ,;;    ;;;
+    .';           .    `.,   ;; ,'      ;              ,;;%    ;;;
+    : ..       _.';     ;   '_,'       .'       ,,,,,,,%;;'    `;;;
+    `.  .     (_.' .  ;'  ,-'          :  ,,,,,;;;;;;;;;'      .;;;
+      `-._        ___,' ,'             :.."""""`````'        ,;;;;
+          `------'____.'               :                   ..;;;;
+             `---'                     `.               ..;;;;'
+                                        :......:::::::::;;;;'
+                                         :::::::::::::::;'      ,;;;
+                                          ;                   ;;;;'
+                                          ;                 .;;;;
+                                        ,'...:::::.        ;;;'
+                                       .'          `;;;;;;''
+                                       ;
+                         -targon       `----------------------------
+    ''')
+    
+if alive == True:
+  print('''
+            __________
+           |  __  __  |
+           | |  ||  | |
+           | |  ||  | |
+           | |__||__| |
+           |  __  __()|
+           | |  ||  | |
+           | |  ||  | |
+           | |  ||  | |
+           | |  ||  | |
+           | |__||__| |
+ejm        |__________|
+  ''')
+  print("Suddenly, three doors spawn in front of you. One is red, one is yellow, and one is blue. The red one smells of sulphur, the yellow one of ammonia, and the third one doesn't have much of a smell at all.")
+  direction_3 = input("Which door do you enter? Red, blue or yellow?").lower()
+  if direction_3 == "red":
+    print("You step through the door...into a pool brimming with lava. Game over.")
+    alive = False
+  elif direction_3 == "yellow":
+    print("You step through the door...into a pool of undisclosed massive hygiene hazards. You pass out from the smell. Game over. Why would you walk into the door smelling of ammonia? Was it really better to sink in the piss than to piss in the sink?")
+    alive = False
+  elif direction_3 == "blue":
+    print("You step through the door...into a river. Swimming underwater, you find a underwater cave. Wandering deeper in...congrats! you found the treasure!")
+    print('''
+         __________
+        /\____;;___\
+       | /         /
+       `. ())oo() .
+        |\(%()*^^()^\
+       %| |-%-------|
+      % \ | %  ))   |
+      %  \|%________|
+    ''')
