@@ -1,0 +1,66 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+spc = [rock, scissors, paper]
+import random
+computer_choice = random.randint(0,2)
+
+user_choice = int(input("Type 0 for rock, 1 for scissors or 2 for paper "))
+
+if user_choice == computer_choice:
+  print(f"Computer picked {spc[computer_choice]}")
+  print("It's a tie!")
+
+else:
+  if user_choice == 0: # chose rock
+    if computer_choice == 1: # scissors
+      print(f"Computer picked {spc[computer_choice]}")
+      print("You win!")
+    else:
+      print(f"Computer picked {spc[computer_choice]}")
+      print("Computer wins!")
+      
+  elif user_choice == 1: # chose scissors
+    if computer_choice == 0:
+      print(f"Computer picked {spc[computer_choice]}")
+      print("You win!")
+    else:
+      print(f"Computer picked {spc[computer_choice]}")
+      print("Computer wins!")
+      
+  elif user_choice == 2:
+    if computer_choice == 0:
+      print(f"Computer picked {spc[computer_choice]}")
+      print("You win!")
+    else:
+      print(f"Computer picked {spc[computer_choice]}")
+      print("Computer wins!")
+  else:
+    print("Invalid input.")
+
+# in the lecture she took advantage of the fact that in rock paper scissors, they all cyclically defeat each other. And use > and < to check
