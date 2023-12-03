@@ -1,0 +1,14 @@
+# for loops
+fruits = ["Apple", "Orange", "Watermelon"]
+for fruit in fruits: # assign temporary variable
+  print(fruit)
+  print(fruit + " Pie") # prints Apple, Apple Pie, Orange, Orange Pie.......
+
+# for loops with range
+for number in range(1, 11, 3):
+  print(number)
+
+total = 0
+for number in range(1, 101): # from 1 to 100
+   total += number
+print(total)
