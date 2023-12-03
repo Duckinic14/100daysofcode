@@ -1,1 +1,27 @@
+# nested if/elif/else
+bill = 0
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
 
+if height >= 120:
+  print("You can ride the rollercoaster")
+  age = int(input("What is your age?"))
+  if age > 18:
+   bill += 12
+   print("Your ticket price is $12")
+  elif age < 12:
+    bill += 5
+    print("Your ticket price is $5")
+  elif age >= 45 and age <=55:
+    print("Everything will be fine. Have a free ride.")
+  else:
+    bill += 7
+    print("Your ticket price is $7")
+  wants_photo = input("Do you want a photo? Y or N.")
+  if wants_photo == "Y":
+    bill += 3
+  print(f"Your bill is ${bill}.")
+  
+
+else:
+  print("Rejected, shorty")
