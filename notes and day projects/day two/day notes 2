@@ -1,1 +1,68 @@
+#Data Types
 
+#String
+
+print("Hello"[0]) #prints H
+print("Hello"[-1]) # prints o
+
+#Integer
+print("123" + "345") # prints 123345
+# numbers within double inverted commas are seen as strings
+print(123 + 345) # numbers seen as integer
+# to write large numbers legibly, use underscore
+# eg 123_456_789
+print(123_456_789)
+
+# Float
+
+3.14159 # Floating point number ie decimal
+
+# Boolean
+
+True # both values always capital
+False 
+
+
+# Type conversion
+num_char = len(input("What is your name?\n")) #len will automatically save as integer
+
+new_num_char = str(num_char) # Convert from int to str
+# in string concatenation, only strings can be used
+print("Number of letters in your name is " + new_num_char)
+
+a = float(123)
+print(a)
+print(type(a)) # typecheck
+
+
+# Numerical symbols
+# + addition lmao
+# - subtraction
+# * multiplication
+# / division
+# % modulo (remainder)
+# ** exponentiation
+# // floor division (rounds down)
+
+# Priority PEMDAS 
+# Parentheses
+# Exponents
+# Multiplication (Note: Multiplication and division has 
+                #same priority)
+# Division
+# Addition
+# Subtraction
+
+
+# rounding numbers
+print(8/3)
+print(round(8/3)) # round the number. converting to int just chops off everything after the decimal point
+print(round(8/3,2)) # round to two decimal points 
+print(round(8/3,1)) # round to one decimal point
+
+# f-string IMPORTANT
+score = 0
+score += 1
+height = 1.8
+isWinning = True
+print(f"Your score is {score}, your height is {height} and you are winning is {isWinning}") #Helps convert different datatypes, super convenient. I could add a int to a str
