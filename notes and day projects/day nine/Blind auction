@@ -1,0 +1,30 @@
+from replit import clear
+#HINT: You can call clear() to clear the output in the console.
+from art import logo
+
+continue_auction = True
+
+participant_bids = {}
+while continue_auction == True:
+  print(logo)
+  name = input("What's your name? ")
+  bid = int(input("How much are you bidding? $"))
+  participant_bids[name] = bid
+  repeat = input("Are there any other bidders? yes or no: ").lower()
+  if repeat == "yes":
+    clear()
+  elif repeat == "no":
+    clear()
+    continue_auction = False
+
+highest_user = ""
+highest_bid = 0
+
+for user in participant_bids:
+  if int(participant_bids[user]) > int(highest_bid):
+    highest_bid = participant_bids[user]
+    highest_user = user
+
+print(f"The highest bidder is {highest_user} with ${highest_bid}.")
+    
+  
