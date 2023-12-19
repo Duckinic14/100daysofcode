@@ -1,0 +1,53 @@
+# Learning functions
+print("Hello")
+num_char = len("Hello") # as we know, saving to a variable
+
+def my_function(): 
+  print("Hello")
+  print("Bye") # parenthesis differentiates a function from a variable. Everything after the colon and indented belongs to the function
+
+my_function()
+
+
+
+# Reeborg's world codes
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+#def jump():
+#    turn_left()
+#    while wall_on_right():
+#        move()
+#    turn_right()
+#    move()
+ #   turn_right()
+ #   move()
+ #   while wall_on_right() and front_is_clear():
+ #      move()
+ #   turn_left()
+
+#while at_goal() == False:
+#    if front_is_clear():
+#        move()
+#    else:
+#        jump()
+def endless_check():
+    if right_is_clear() and front_is_clear():
+        turn_left()
+        turn_left()
+        if right_is_clear() and front_is_clear():
+            turn_right()
+            move()
+
+while at_goal() == False:
+    endless_check()
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
