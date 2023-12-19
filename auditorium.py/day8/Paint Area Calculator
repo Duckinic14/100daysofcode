@@ -1,0 +1,9 @@
+# Write your code below this line 👇
+# import math
+
+def paint_calc(height, width, cover):
+  area = int(height * width)
+  number_of_cans = float(area // coverage) + (area % coverage > 0)
+  print(f"You'll need {int(number_of_cans)} cans of paint.")
+
+  # or round_up_cans = math.ceil(num_cans)
